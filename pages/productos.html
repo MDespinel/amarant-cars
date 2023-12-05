@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;1,300;1,400&family=Playpen+Sans:wght@100;400;500&display=swap" rel="stylesheet">
@@ -16,20 +15,40 @@
         <h1>Productos</h1>
     </header>
     <main class="main-prod">
-      <div id="productos" class="carousel slide">
+    <div id="productos" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#productos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#productos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#productos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#productos" data-bs-slide-to="3" aria-label="Slide 4"></button>
+         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="../img/cera.jfif" class="d-block w-100" alt="Cera liquida">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>cera liquida con teflon antiestatica, repele el polvo y realza la bicapa</h5>
+              <p>Precio 1litro: $1700</p>
+            </div>
           </div>
           <div class="carousel-item">
             <img src="../img/limpiaparabrisas.jfif" class="d-block w-100" alt="Limpia parabrisas">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>limpia parabrisas concentrado, rinde hasta 3 litros</h5>
+              <p>Precio: $450</p>
+            </div>
           </div>
           <div class="carousel-item">
             <img src="../img/revividor.jfif" class="d-block w-100" alt="revividor de cubiertas">
-
-          </div>
-          <div class="carousel-item">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>revividor para exterior de gomas, plasticos y vinilicos</h5>
+              <p>Precio 1litro: $3000</p>
+            </div>
+         <div class="carousel-item">
             <img src="../img/shampoo.jfif" class="d-block w-100" alt="Shampoo espuma activa">
+             <div class="carousel-caption d-none d-md-block">
+              <h5>shampoo desengrasante, espumante, 1 litro rinde 3 litros</h5>
+               <p>Precio 1 litro: $1500</p>
+                </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#productos" data-bs-slide="prev">
@@ -43,7 +62,7 @@
       </div>
     </main>
     <footer>
-        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="../index.html">Inicio</a></li>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
