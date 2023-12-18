@@ -1,0 +1,47 @@
+@import "../base/maps";
+.Main-boton{
+    background-color: map-get($fondo , color);
+    display: grid;
+    width: 100%;
+    margin-top: auto;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: 1fr; 
+    gap: 10px;
+    justify-content: center;
+     }
+.boton{
+        padding: 20px 20px;
+        font-size: 20px;
+        text-align: center;
+        cursor: pointer;
+        background-color: map-get($fondo , color);
+        color: rgb(0, 0, 0);
+        border: 10px;
+        border-radius: 5px;
+        &:hover {
+            background-color: #524848;
+        }
+    }
+h3{
+    font-size: map-get( $texto, tamanio);
+    color: map-get( $texto,color-bg);
+    text-decoration: map-get($texto, decoration);
+}
+.Parrafo{
+    font-size: 20px;
+    color: #000000;
+    padding: 10px;
+    background-color: map-get($fondo , color);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    &:hover {
+        background-color: #524848;
+    }
+}
+.carousel-item{
+    img {
+      width: 80%; 
+      height: auto;
+    }
+  }

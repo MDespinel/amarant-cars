@@ -1,0 +1,6 @@
+@import "../scss/components/header";
+@import "../scss/components/mains";
+@import "../scss/components/footer";
+@import "../scss/base/maps";
+
+body{background-color:map-get($fondo , color );}
