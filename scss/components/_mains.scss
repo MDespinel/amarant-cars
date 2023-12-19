@@ -8,20 +8,26 @@
     grid-template-rows: 1fr; 
     gap: 10px;
     justify-content: center;
-     }
-.boton{
-        padding: 20px 20px;
-        font-size: 20px;
-        text-align: center;
-        cursor: pointer;
-        background-color: map-get($fondo , color);
-        color: rgb(0, 0, 0);
-        border: 10px;
-        border-radius: 5px;
-        &:hover {
-            background-color: #524848;
-        }
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+   }
+}
+@mixin boton-estilos($fondo) {
+    padding: 20px 20px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: map-get($fondo, color);
+    color: rgb(0, 0, 0);
+    border: 10px;
+    border-radius: 5px;
+    &:hover {
+      background-color: #524848;
     }
+  }
+    .boton {
+    @include boton-estilos($fondo);
+  }
 h3{
     font-size: map-get( $texto, tamanio);
     color: map-get( $texto,color-bg);
@@ -43,5 +49,45 @@ h3{
     img {
       width: 80%; 
       height: auto;
+    }
+  }
+  .contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    justify-content: left;
+  
+    form {
+      display: flex;
+      flex-direction: column;
+  
+      label {
+        margin-bottom: 5px;
+      }
+  
+      .contact-input {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+  
+        &.contact-message {
+          height: 100px;
+        }
+      }
+  
+      button {
+        padding: 10px 20px;
+        background-color: map-get($fondo , color);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+  
+        &:hover {
+            background-color: #524848;
+        }
+      }
     }
   }

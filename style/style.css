@@ -27,6 +27,11 @@ h2 {
   gap: 10px;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .Main-boton {
+    grid-template-columns: 1fr;
+  }
+}
 
 .boton {
   padding: 20px 20px;
@@ -65,19 +70,63 @@ h3 {
   height: auto;
 }
 
-.boton-f {
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  justify-content: left;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form form label {
+  margin-bottom: 5px;
+}
+.contact-form form .contact-input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.contact-form form .contact-input.contact-message {
+  height: 100px;
+}
+.contact-form form button {
+  padding: 10px 20px;
+  background-color: rgb(110, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.contact-form form button:hover {
+  background-color: #524848;
+}
+
+.boton-f, .boton-grande, .boton-con-borde-rojo {
   padding: 15px 30px;
   font-size: 15px;
   text-align: center;
-  cursor: poiter;
-  background-color: 524848;
+  cursor: pointer;
+  background-color: #524848;
   color: rgb(0, 0, 0);
-  border: 1px;
+  border: 1px solid;
   border-radius: 3px;
 }
-.boton-f:hover {
+.boton-f:hover, .boton-grande:hover, .boton-con-borde-rojo:hover {
   background-color: #090000;
   color: white;
+}
+
+.boton-con-borde-rojo {
+  border-color: red;
+}
+
+.boton-grande {
+  padding: 20px 40px;
+  font-size: 18px;
 }
 
 .footer {

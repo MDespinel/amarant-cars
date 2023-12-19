@@ -1,17 +1,27 @@
-.boton-f{
-        padding: 15px 30px;
-        font-size: 15px;
-        text-align: center;
-        cursor: poiter;
-        background-color: 524848;
-        color: rgb(0, 0, 0);
-        border: 1px;
-        border-radius: 3px;
-        &:hover {
-            background-color: #090000;
-            color: white;
-        }
+.boton-f {
+    padding: 15px 30px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer; 
+    background-color: #524848; 
+    color: rgb(0, 0, 0);
+    border: 1px solid; 
+    border-radius: 3px;
+  
+    &:hover {
+      background-color: #090000;
+      color: white;
     }
+  }
+    .boton-con-borde-rojo {
+    @extend .boton-f;
+    border-color: red;
+  }
+  .boton-grande {
+    @extend .boton-f;
+    padding: 20px 40px;
+    font-size: 18px;
+  }
 .footer{
     text-align: right;
     font-size: 15px;
